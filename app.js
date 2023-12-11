@@ -8,7 +8,7 @@ app.use(cors());
 app.use("/api", productRoutes);
 mongoose
   .connect(
-    "mongodb+srv://kimdev:kimdev35@cluster0.ypfmwea.mongodb.net/project1?retryWrites=true&w=majority"
+    "MONGO_URL"
   )
   .then(() => {
     app.listen(5000, () => console.log("App listening to port 5000"));
